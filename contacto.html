@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <p class="header__logo">
+            <a href="./index.html"><img src="./img/logo.png" alt="logo del sitio web" width="100"height="100"></a>
+        </p>
+        <p class="link-productos">
+            <a href="./productos.html">Conoce nuestros productos</a>
+        </p>
+
+        <nav> 
+            <ul> 
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+<!-- Formulario de contacto -->
+        <section class="seccion-contacto">
+            <h1 class="titulo-contacto">Contacto</h1>
+            <form
+                class="form"   
+                action="https://formspree.io/f/xnnbkged"
+                method="POST"
+                >
+                <div class="campo-form">
+                    <label for="nombre"> Nombre:</label>
+                    <input id="nombre" type="text" name="nombre" />
+                </div>
+            
+                <div class="campo-form">
+                    <label for="email"> Correo:</label>
+                    <input id="email" type="email" name="email" />
+                </div>
+
+                <div class="campo-form">
+                    <label for="mensaje"> Mensaje:</label>
+                    <textarea id="mensaje" name="message"></textarea>
+                </div>
+                <input type="hidden" name="subject" value="Contacto desde el sitio" />
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <div class="ubicacion">
+            <h2>Tambien podes acercarte a nuestro local</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.6243016082844!2d-58.4693458!3d-34.6894304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcceaed0698421%3A0x4bc328ab7476960f!2sCa%C3%B1ada%20de%20G%C3%B3mez%205278%2C%20C1439GNT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1758477497532!5m2!1ses-419!2sar" 
+            width="300" 
+            height="200" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <section class="tabla">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Mensaje</th>
+                        <th>Estado del mensaje</th>
+                        <th>Observaciones</th>
+                        <th>Costo del envio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Cliente 1 -->
+                    <tr>
+                        <td>Agostina Martinez</td>
+                        <td>agosme@gmail.com</td>
+                        <td>Necesito una bolsa de alimento de perro</td>
+                        <td>leido</td>
+                        <td>enviado</td>
+                        <td>$300</td>
+                    </tr>
+                    <!-- Cliente 2 -->
+                    <tr>
+                        <td>Jorge Silva</td>
+                        <td>Jor.martinez@hotmail.com</td>
+                        <td>Trajeron un alimento equivocado, no es el que yo compré</td>
+                        <td>solucionado</td>
+                        <td></td>
+                        <td >$0</td> 
+                    </tr>
+                    <!-- Cliente 3 -->
+                    <tr>
+                        <td>Alejo Evans</td>
+                        <td>aleme@gmail.com</td>
+                        <td>Muchas gracias, todo perfecto</td>
+                        <td colspan="3">respondido</td>
+                    </tr>
+                    <!-- Cliente 4 -->
+                    <tr>
+                        <td>Delia Nieves</td>
+                        <td>jopace3@yahoo.com</td>
+                        <td>Cuáles son las formas de pago</td>
+                        <td colspan="3">pendiente</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="5" rowspan="2">Total envios: Estoy tratando de hacer mas largo este 
+                            parrafo para que ocupe dos lineas mas a ver si mi codigo esta bien, intemto
+                            que no se vaya de ancho pero aun tengo que seguir agregando palabras. Listo 
+                            lo logre, baja cuando necesita ocuparlo.
+                        </td>
+                        <td rowspan="2">$300</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                </tr>
+        </section>
+<!-- No me esta funcionando que la ultima fila ocupe 2 filas-->
+                </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>2025 Mi sitio web. Todos los derechos reservados.</p>
+        <nav>
+            <ul>
+                <li><a href=""><img src="./img/instagram.png" alt="logo instagram" width="20"></a></li>
+                <li><a href=""><img src="./img/facebook.png" alt="logo facebook"width="20"></a></li>
+                <li><a href=""><img src="./img/twitter-alt.png" alt="logo x" width="20"></a></li>
+            </ul>
+        </nav>
+    
+    </footer>
+
+</body>
+</html>

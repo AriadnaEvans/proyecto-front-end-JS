@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background: linear-gradient(
+    to bottom,
+    rgb(245, 252, 237),
+    rgb(187, 199, 177),
+    rgb(158, 173, 141)
+  );
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #54878F;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* --------------HEADER--------------- */
+
+header{
+    background-color: #95a97b;
+    width: 100%;
+    height: 70px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo{
+    padding: 0.5rem;
+    width: 100px;
+    height: 100px;
+    margin-left: 3rem;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+    display: flex;
+}
+
+header nav{
+    padding: 0.5rem;
+    margin-right: 1rem;
+    display: flex;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+header nav li{
+    font-size: 2rem;
+    display: flex;
+}
+
+header nav a{
+    color: #114B5F;
+    text-decoration: none;
+    display: flex;
+}
+
+.link-productos{
+    color: rgb(25, 61, 49);
+    border: 3px ridge #143309;
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #dff1c6;
+}
+
+ .link-productos a{
+    color: #114B5F;
+    font-size: 2rem;
+    text-decoration: none;
+    display: flex;
+    padding: 1rem 2rem;
+    margin: 2 1;
+ }
+
+/* ---------------HOME-------------- */
+
+main{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1{
+    font-size: 5rem;
+    color: #5b7d7d;
+    text-align: center;
+    margin: 2rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+main h2{
+    font-size: 4rem;
+    color: #2b4141;
+    text-align: center;
+    margin: 2rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.nosotros{
+    font-size: 1.5rem;
+    color: #2b4141;
+    justify-content: center;
+    border: 0.2rem solid black;
+    padding: 1rem 4rem;
+    width: 80%;
+    background-color: #e1f5de;
+    border-radius: 2.5rem;
+}
+
+.nuestros-bebes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3rem;
+    gap: 2rem;
+}
+
+.bebes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 20%;
+    padding: 1rem;
+    background-color: #abb69d;
+    border-radius: 1rem;
+    border: 2px double #114B5F;
+    flex-direction: column;
+}
+
+ .bebes img{
+    width: 80%;
+    border-radius: 0.5rem;
+    border: 2px solid black;
+ }
+
+.bebes h3{
+    font-size: 2rem;
+}
+
+/* ------------FOOTER---------------- */
+
+footer{
+    width: 100%;
+    height: 3rem; 
+    background-color: #95a97b;
+    padding: 2rem;
+    color: #114B5F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+footer p{
+    color: #114B5F;
+    font-size: 1.5rem;
+    display: flex;
+}
+
+footer nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 3rem;
+}
+
+footer nav li{
+    font-size: 2rem;
+    font-weight: bolder;
+    display: flex;
+}
+
+footer nav a{
+    color: #114B5F;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    display: flex;
+}
+
+/*--------------- PRODUCTOS ----------------*/
+
+.tuper-productos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3rem;
+    gap: 2rem;
+}
+
+.producto{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 25rem;
+    background-color: #F1F8E8;
+    border-radius: 1rem;
+    border: 2px double #114B5F;
+}
+
+.producto img{
+    width: 80%;
+    border-radius: 0.5rem;
+    border: 2px solid black; 
+}
+
+.producto h2{
+    font-size: 1.5rem;
+    color: #114B5F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+    
+.producto h3{
+    font-size: 1rem;
+    color: black;
+    padding: 0.5rem 2rem;
+}
+
+.precio{
+    font-size: 1.5rem;
+    color: #2e5949;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.carrito {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+
+.carrito img {
+    width: 20px; 
+    height: 20px;
+}
+
+/*--------------CONTACTO------------- */
+
+
+.seccion-contacto {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.titulo-contacto {
+  font-size: 4rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.form {
+  background-color: #576561;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 30%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 300px;
+}
+
+.campo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.campo-form label {
+  font-size: 2rem;
+  color: black;
+}
+
+.campo-form input{
+  padding: 1rem;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.campo-form textarea {
+  padding: 1rem;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  border: none;
+  width: 100%;             
+  min-height: 8rem;       
+  resize: vertical;
+}
+
+.form button {
+  background-color: #d21f3c;
+  color: #e5e6e8;
+  border: none;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.ubicacion{
+    padding: auto;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.ubicacion h2{
+    font-size: 2rem;
+}
+
+.ubicacion iframe{
+    border-radius: 2rem;
+}
+
+/* ------------MEDIA QUERIES--------------- */
+
+@media (max-width: 768px) {
+
+    header, footer{
+        align-items: center;
+        margin: 0; 
+        gap: 0 ;
+        padding: 0;
+    }   
+    
+    .nosotros, .tabla{
+        display: none;
+    }
+}
