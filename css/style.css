@@ -122,16 +122,17 @@ header nav a{
 
 .bebes{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2rem;
-    width: 20%;
-    padding: 1rem;
-    background-color: #abb69d;
+    gap: 0.5rem;
+    width: 25rem;
+    background-color: #F1F8E8;
     border-radius: 1rem;
     border: 2px double #114B5F;
-    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 10px 30px #173228;
 }
 
  .bebes img{
@@ -148,7 +149,7 @@ header nav a{
 
 footer{
     width: 100%;
-    height: 3rem; 
+    height: 4rem; 
     background-color: #95a97b;
     padding: 2rem;
     color: #114B5F;
@@ -187,16 +188,27 @@ footer nav a{
 
 /*--------------- PRODUCTOS ----------------*/
 
+.seccion-contacto {
+  width: 100%;
+}
+
+.seccion-productos h2 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem;
+  margin: 3rem;
+}
+
 .tuper-productos{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 3rem;
     gap: 2rem;
 }
 
 .producto{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -206,7 +218,7 @@ footer nav a{
     border-radius: 1rem;
     border: 2px double #114B5F;
     overflow: hidden;
-    box-shadow: 0 10px 30px #2e5949;
+    box-shadow: 0 10px 30px #173228;
 }
 
 .producto img{
@@ -333,6 +345,14 @@ footer nav a{
 /* ------------MEDIA QUERIES--------------- */
 
 @media (max-width: 768px) {
+    body{
+        font-size: 1.2rem;
+    }
+    
+    main{
+        flex-direction: column;
+        padding-bottom: 0;
+    }
 
     header, footer{
         align-items: center;
