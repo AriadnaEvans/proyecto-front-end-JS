@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <title>Productos</title>
+    <title>Carrito</title>
 </head>
+        
 <body>
     <header>
         <div class="header__logo">
             <a href="../index.html"><img src="../img/logo.png" alt="logo" width="100"height="100"></a>
         </div>
-
+        
         <nav> 
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li> 
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./carrito.html" class="carrito-icono">
+                🛒<span id="contador-carrito">0</span></a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section id="seccionProductos">
-            <h2>Estos son nuestros productos</h2>
-           
+        <h1>Carrito de compras</h1>
+        <section id="contenedor-carrito">
         </section>
+        <div class="acciones-carrito" id="acciones-carrito">
+        </div>
     </main>
+
     <footer>
         <p>2025 Mi sitio web. Todos los derechos reservados.</p>
         <nav>
@@ -38,6 +41,7 @@
             </ul>
         </nav>
     </footer>
-    <script src="../js/index.js"></script>
+    <script type="module" src="../js/carrito.js"></script>
+
 </body>
 </html>
