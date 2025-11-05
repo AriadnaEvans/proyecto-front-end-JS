@@ -127,38 +127,6 @@ main h2{
     border-radius: 2.5rem;
 }
 
-.nuestros-bebes{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 3rem;
-    gap: 2rem;
-}
-
-.bebes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    width: 20%;
-    padding: 1rem;
-    background-color: #abb69d;
-    border-radius: 1rem;
-    border: 2px double #114B5F;
-    flex-direction: column;
-}
-
- .bebes img{
-    width: 80%;
-    border-radius: 0.5rem;
-    border: 2px solid black;
- }
-
-.bebes h3{
-    font-size: 2rem;
-}
-
 /* ------------FOOTER---------------- */
 
 footer{
@@ -202,16 +170,11 @@ footer nav a{
 
 /*--------------- PRODUCTOS ----------------*/
 
-#seccionProductos{
+.seccionProductos, #contenedor-carrito{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-.tuperProductos{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: row;
     margin: 3rem;
     gap: 2rem;
 }
@@ -257,14 +220,37 @@ footer nav a{
     margin-bottom: 2rem;
 }
 
-.carrito{
+.btn{
     cursor: pointer;
     margin-bottom: 2rem;
-    margin-left: 2rem;
-    width: 20px; 
-    height: 20px;
+    width: 150px; 
+    height: 30px;
+    background-color: #9aa9a5;
+    border-radius: 0.5rem;
     overflow: hidden;
     box-shadow: 0 10px 30px #173228;
+}
+
+.btn-vaciar-carrito{
+    cursor: pointer;
+    margin-top: 2rem;
+    width: 150px; 
+    height: 30px;
+    background-color: #9ac8ea;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px #5f90b0;
+}
+
+.btn-eliminar-carrito{
+    cursor: pointer;
+    margin-bottom: 2rem;
+    width: 150px; 
+    height: 30px;
+    background-color: #bf4246;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px #e53b32;
 }
 
 /*--------------CONTACTO------------- */
