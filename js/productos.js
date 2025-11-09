@@ -31,7 +31,7 @@ export const arrayProductos = [
   },
   {
     nombre: "Balanceado perro cachorro (Excellent)",
-    img: "/img/perro cachorro.png",
+    img: "img/perro cachorro.png",
     descripcion: "Excellent Perros es un alimento seco balanceado que cubre las necesidades nutricionales y energéticas de tu mascota. Aporta proteínas de calidad, vitaminas (A, D, E), minerales y ácidos grasos esenciales que fortalecen el sistema inmunológico, favorecen la digestión y contribuyen a la salud de músculos, huesos, piel, pelaje y dientes.",
     precio: 59500,
   },
