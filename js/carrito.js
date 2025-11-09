@@ -30,7 +30,7 @@ const renderizarCarrito = () => {
     titulo.textContent = producto.nombre;
     
     const img = document.createElement("img");
-    img.src = `./${producto.img}`;
+    img.src = producto.img;
     img.alt = producto.nombre;
     
     const descripcion = document.createElement("h3");
