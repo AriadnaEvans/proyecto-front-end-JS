@@ -26,13 +26,12 @@ const renderizarCarrito = () => {
     artProducto.classList.add("artProducto");
 
     const titulo = document.createElement("h2");
-    titulo.classList.add("titulo");
+    titulo.classList.add("nombre");
     titulo.textContent = producto.nombre;
     
     const img = document.createElement("img");
-    img.classList.add("img");
-    img.src = producto.img;
-    img.alt = producto.titulo
+    img.src = `../${producto.img}`;
+    img.alt = producto.nombre;
     
     const descripcion = document.createElement("h3");
     descripcion.classList.add("descripcion");
@@ -53,7 +52,7 @@ const renderizarCarrito = () => {
       renderizarCarrito();
     });
 
-    artProducto.appendChild(titulo);
+    artProducto.appendChild(nombre);
     artProducto.appendChild(img);
     artProducto.appendChild(descripcion);
     artProducto.appendChild(precio);
