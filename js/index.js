@@ -15,13 +15,13 @@ document.addEventListener("DOMContentLoaded", () => {
     artProducto.classList.add("artProducto");
 
     const titulo = document.createElement("h2");
-    titulo.classList.add("nombre");
+    titulo.classList.add("titulo");
     titulo.textContent = producto.nombre;
     
     const img = document.createElement("img");
     img.classList.add("img");
     img.src = producto.img;
-    img.alt = producto.nombre
+    img.alt = producto.titulo
     
     const descripcion = document.createElement("h3");
     descripcion.classList.add("descripcion");
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
       agregarAlCarrito(producto);
     });
 
-    artProducto.appendChild(nombre);
+    artProducto.appendChild(titulo);
     artProducto.appendChild(img);
     artProducto.appendChild(descripcion);
     artProducto.appendChild(precio);
@@ -50,4 +50,5 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 
 })
+  
   
