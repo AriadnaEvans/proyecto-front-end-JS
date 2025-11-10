@@ -1,5 +1,10 @@
-import {guardarCarrito, obtenerCarrito, vaciarCarritoStorage} from "./storage.js";
-import {actualizarContador, mostrarMensaje} from "./ui.js";
+import {
+  guardarCarrito,
+  obtenerCarrito,
+  vaciarCarritoStorage,
+} from "./storage.js";
+
+import { actualizarContador, mostrarMensaje } from "./ui.js";
 
 export const agregarAlCarrito = (producto) => {
   const carrito = obtenerCarrito();
@@ -12,7 +17,6 @@ export const agregarAlCarrito = (producto) => {
 };
 
 export const eliminarProducto = (indice) => {
- 
   const carrito = obtenerCarrito();
   carrito.splice(indice, 1);
 
