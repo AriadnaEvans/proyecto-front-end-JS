@@ -2,6 +2,10 @@ import { obtenerCarrito } from "./storage.js";
 import { eliminarProducto, vaciarCarrito } from "./funcionesCarrito.js";
 import { actualizarContador } from "./ui.js";
 
+const calcularTotal = (carrito) => {
+  return carrito.reduce((acum, producto) => acum + producto.precio, 0);
+};
+
 const renderizarCarrito = () => {
  
   const carrito = obtenerCarrito();
@@ -62,6 +66,12 @@ const renderizarCarrito = () => {
 
     contenedor.appendChild(artProducto);
   });
+
+  const total = calcularTotal(carrito);
+  const totalCarrito = document.createElement("p");
+  totalCarrito.classList.add("total-carrito");
+  totalCarrito.textContent = `Total: $${total}`;
+  divAcciones.appendChild(totalCarrito);
 
   const btnVaciar = document.createElement("button");
   btnVaciar.classList.add("btn");

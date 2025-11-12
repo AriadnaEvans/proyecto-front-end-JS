@@ -74,10 +74,6 @@ header nav a{
     transition: color 0.3s;
 }
 
-header nav a:hover{
-    color: #0a2d3a;
-}
-
 .link-productos{
     color: rgb(25, 61, 49);
     border: 3px ridge #143309;
@@ -89,11 +85,8 @@ header nav a:hover{
     transition: background-color 0.3s;
 }
 
-.link-productos:hover{
-    background-color: #c9e0a8;
-}
 
- .link-productos a{
+.link-productos a{
     color: #114B5F;
     font-size: 2rem;
     text-decoration: none;
@@ -185,9 +178,6 @@ footer nav a{
     transition: color 0.3s;
 }
 
-footer nav a:hover{
-    color: #0a2d3a;
-}
 
 /*--------------- PRODUCTOS ----------------*/
 
@@ -213,10 +203,6 @@ footer nav a:hover{
     box-shadow: 0 0 20px 10px #173228;
     transition: transform 0.3s;
     padding: 1rem;
-}
-
-.artProducto:hover{
-    transform: translateY(-5px);
 }
 
 .img{
@@ -246,7 +232,7 @@ footer nav a:hover{
 
 .precio{
     font-size: 1.5rem;
-    color: #3f795c;
+    color: #123b27;
     text-align: center;
     margin-bottom: 2rem;
     font-weight: bold;
@@ -262,13 +248,27 @@ footer nav a:hover{
     overflow: hidden;
     box-shadow: 0 0 20px 10px #3a803a;
     border: none;
-    font-family: inherit;
     font-size: 1.5rem;
-    transition: transform 0.2s;
+    align-self: center; 
+    margin-top: auto;   
+    margin-bottom: 2rem;
 }
 
-.btn:hover{
-    transform: translateY(-2px);
+#acciones-carrito {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  margin-top: 1rem;
+}
+
+
+.total-carrito {
+    color: #0a2d3a;
+    font-size: 5rem;
+    font-weight:bolder;
+    margin: 10px 0;
+    align-items: center;
 }
 
 .btn-vaciar-carrito{
@@ -276,23 +276,21 @@ footer nav a:hover{
     margin-top: 2rem;
     width: 150px; 
     height: 30px;
+    flex-direction: column;
     background-color: #d0eaf7;
     border-radius: 1rem;
     overflow: hidden;
     box-shadow: 0 0 20px 10px #497491;
     border: none;
-    font-family: inherit;
     font-size: 1.5rem;
-    transition: transform 0.2s;
-}
-
-.btn-vaciar-carrito:hover{
-    transform: translateY(-2px);
+    align-self: center; 
+    margin-top: auto;  
+    margin-bottom: 2rem;
 }
 
 .btn-eliminar-carrito{
     cursor: pointer;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     width: 150px; 
     height: 30px;
     background-color: #f8dbde;
@@ -300,13 +298,7 @@ footer nav a:hover{
     overflow: hidden;
     box-shadow: 0 0 20px 10px #e53b32;
     border: none;
-    font-family: inherit;
     font-size: 1.5rem;
-    transition: transform 0.2s;
-}
-
-.btn-eliminar-carrito:hover{
-    transform: translateY(-2px);
 }
 
 /*--------------CONTACTO------------- */
@@ -374,10 +366,6 @@ footer nav a:hover{
   border-radius: 0.5rem;
   cursor: pointer;
   transition: background-color 0.3s;
-}
-
-.form button:hover {
-  background-color: #b01a32;
 }
 
 .ubicacion{
