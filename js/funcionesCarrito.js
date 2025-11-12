@@ -4,7 +4,9 @@ import {
   vaciarCarritoStorage,
 } from "./storage.js";
 
-import { actualizarContador, mostrarMensaje } from "./ui.js";
+import { actualizarContador, 
+  mostrarMensaje 
+} from "./ui.js";
 
 export const agregarAlCarrito = (producto) => {
   const carrito = obtenerCarrito();
